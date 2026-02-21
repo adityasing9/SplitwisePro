@@ -1,51 +1,34 @@
-
-
-
-
-
 # 💸 SplitwisePro – Bill Split & Expense Tracker
 
-![Vite](https://img.shields.io/badge/Vite-Frontend-purple?logo=vite)
-![React](https://img.shields.io/badge/React-18-blue?logo=react)
-![Convex](https://img.shields.io/badge/Convex-Backend-orange)
-![TailwindCSS](https://img.shields.io/badge/TailwindCSS-Styling-38B2AC?logo=tailwind-css)
-![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?logo=vercel)
-![License](https://img.shields.io/badge/License-MIT-green)
-
-
-
-
+<p align="center">
+  <img src="https://img.shields.io/github/stars/adityasing9/SplitwisePro?style=social" />
+  <img src="https://img.shields.io/github/license/adityasing9/SplitwisePro" />
+  <img src="https://img.shields.io/github/package-json/v/adityasing9/SplitwisePro" />
+  <img src="https://img.shields.io/github/deployments/adityasing9/SplitwisePro/vercel?label=Vercel%20Deploy" />
+  <img src="https://komarev.com/ghpvc/?username=adityasing9&repo=SplitwisePro&color=blue" />
+</p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/React-Vite-blue?logo=react" />
+  <img src="https://img.shields.io/badge/Frontend-React%20%2B%20Vite-blue?logo=react" />
   <img src="https://img.shields.io/badge/Backend-Convex-orange" />
   <img src="https://img.shields.io/badge/Database-Convex%20Cloud-yellow" />
-  <img src="https://img.shields.io/badge/Styled%20with-TailwindCSS-38B2AC?logo=tailwind-css" />
+  <img src="https://img.shields.io/badge/Stylings-TailwindCSS-38B2AC?logo=tailwind-css" />
   <img src="https://img.shields.io/badge/Hosted%20on-Vercel-black?logo=vercel" />
 </p>
 
 <p align="center">
-  🚀 <a href="https://splitwisepro.vercel.app">Live Demo</a>
+  🚀 <a href="https://splitwisepro.vercel.app"><strong>Live Demo</strong></a>
 </p>
-
-A modern bill-splitting and expense tracking web application built with **React (Vite)** and powered by **Convex** for backend, database, and authentication.
-
----
-
-## 🌐 Live Demo
-
-🚀 **Visit here:**  
-👉 https://splitwisepro.vercel.app
 
 ---
 
 ## ✨ Features
 
 - 🧾 Split bills among multiple people
-- 📊 Automatic calculation of balances
-- ☁️ Cloud backend powered by Convex
+- 📊 Automatic balance calculation
+- ☁️ Cloud backend with Convex
 - 🔐 Built-in authentication (Convex Auth)
-- ⚡ Fast and optimized frontend using Vite
+- ⚡ Fast Vite-powered frontend
 
 ---
 
@@ -57,8 +40,19 @@ A modern bill-splitting and expense tracking web application built with **React 
 | Styling | Tailwind CSS |
 | Backend | Convex |
 | Database | Convex Cloud |
-| Authentication | Convex Auth |
 | Deployment | Vercel |
+
+---
+
+## 🧠 Architecture
+
+```
+User
+  ↓
+Vercel (React Frontend)
+  ↓
+Convex Cloud (Backend + Database)
+```
 
 ---
 
@@ -66,8 +60,8 @@ A modern bill-splitting and expense tracking web application built with **React 
 
 ```
 SplitwisePro/
-├── convex/              # Backend functions & database schema
-├── app/ or src/         # React frontend
+├── convex/              # Backend functions & schema
+├── src/ or app/         # React frontend
 ├── public/
 ├── .env.local
 ├── package.json
@@ -77,26 +71,15 @@ SplitwisePro/
 
 ---
 
-## 🔐 Authentication
-
-This project uses **Convex Auth** with Anonymous authentication for development.
-
-For production use:
-- Enable email/password login
-- Add OAuth providers (Google/GitHub)
-- Secure deployment keys
-
----
-
 ## 🛠 Local Development
 
-### 1️⃣ Install Dependencies
+### Install Dependencies
 
 ```bash
 npm install
 ```
 
-### 2️⃣ Configure Environment Variables
+### Setup Environment Variables
 
 Create `.env.local`:
 
@@ -106,7 +89,7 @@ CONVEX_DEPLOYMENT=dev:tacit-wildebeest-666
 VITE_CONVEX_URL=https://tacit-wildebeest-666.convex.cloud
 ```
 
-### 3️⃣ Start Development
+### Start Development Server
 
 ```bash
 npm run dev
@@ -122,18 +105,25 @@ http://localhost:5173
 
 ## 🚀 Deployment
 
-This project is deployed using **Vercel**.
+1. Push to GitHub
+2. Import project in Vercel
+3. Set:
+   - Build Command → `npm run build`
+   - Output Directory → `dist`
+4. Add environment variable:
+   ```
+   VITE_CONVEX_URL=https://tacit-wildebeest-666.convex.cloud
+   ```
+5. Deploy 🎉
 
-Build settings:
+---
 
-- Build Command: `npm run build`
-- Output Directory: `dist`
+## 👤 Author
 
-Environment Variable required:
+**Aditya Singh**
 
-```
-VITE_CONVEX_URL=https://tacit-wildebeest-666.convex.cloud
-```
+- GitHub: https://github.com/adityasing9
+- Portfolio: (Add if available)
 
 ---
 
