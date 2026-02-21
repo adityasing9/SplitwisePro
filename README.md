@@ -2,19 +2,22 @@
 
 A modern bill-splitting and expense tracking web application built with **React (Vite)** and powered by **Convex** for backend, database, and authentication.
 
-This project is connected to the Convex deployment:
+---
 
-👉 tacit-wildebeest-666
+## 🌐 Live Demo
+
+🚀 **Visit here:**  
+👉 https://splitwisepro.vercel.app
 
 ---
 
-## 🚀 Features
+## ✨ Features
 
 - 🧾 Split bills among multiple people
 - 📊 Automatic calculation of balances
-- ☁️ Cloud backend using Convex
+- ☁️ Cloud backend powered by Convex
 - 🔐 Built-in authentication (Convex Auth)
-- ⚡ Fast frontend with Vite
+- ⚡ Fast and optimized frontend using Vite
 
 ---
 
@@ -36,7 +39,7 @@ This project is connected to the Convex deployment:
 ```
 SplitwisePro/
 ├── convex/              # Backend functions & database schema
-├── app/ or src/         # Frontend React code
+├── app/ or src/         # React frontend
 ├── public/
 ├── .env.local
 ├── package.json
@@ -50,10 +53,10 @@ SplitwisePro/
 
 This project uses **Convex Auth** with Anonymous authentication for development.
 
-For production, consider:
-- Email/password authentication
-- OAuth providers (Google/GitHub)
-- Securing deployment keys
+For production use:
+- Enable email/password login
+- Add OAuth providers (Google/GitHub)
+- Secure deployment keys
 
 ---
 
@@ -67,7 +70,7 @@ npm install
 
 ### 2️⃣ Configure Environment Variables
 
-Create a `.env.local` file:
+Create `.env.local`:
 
 ```env
 CONVEX_DEPLOY_KEY=your_deploy_key
@@ -75,15 +78,13 @@ CONVEX_DEPLOYMENT=dev:tacit-wildebeest-666
 VITE_CONVEX_URL=https://tacit-wildebeest-666.convex.cloud
 ```
 
-> ⚠️ Do NOT commit `.env.local` to GitHub.
-
-### 3️⃣ Start Development Server
+### 3️⃣ Start Development
 
 ```bash
 npm run dev
 ```
 
-Open in browser:
+Open:
 
 ```
 http://localhost:5173
@@ -91,40 +92,20 @@ http://localhost:5173
 
 ---
 
-## 📡 HTTP API
+## 🚀 Deployment
 
-User-defined HTTP routes are located in:
+This project is deployed using **Vercel**.
+
+Build settings:
+
+- Build Command: `npm run build`
+- Output Directory: `dist`
+
+Environment Variable required:
 
 ```
-convex/router.ts
+VITE_CONVEX_URL=https://tacit-wildebeest-666.convex.cloud
 ```
-
-Routes are separated from `convex/http.ts` to protect authentication routes.
-
----
-
-## 🚀 Deployment (Vercel)
-
-1. Push repository to GitHub
-2. Import project in Vercel
-3. Set build settings:
-   - Build Command: `npm run build`
-   - Output Directory: `dist`
-4. Add environment variable:
-   ```
-   VITE_CONVEX_URL=https://tacit-wildebeest-666.convex.cloud
-   ```
-5. Deploy 🎉
-
-Convex backend remains hosted on Convex Cloud.
-
----
-
-## 📚 Documentation
-
-- Convex Docs: https://docs.convex.dev/
-- Deployment Guide: https://docs.convex.dev/production/
-- Best Practices: https://docs.convex.dev/understanding/best-practices/
 
 ---
 
