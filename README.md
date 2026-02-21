@@ -1,5 +1,15 @@
 # 💸 SplitwisePro – Bill Split & Expense Tracker
 
+![Vite](https://img.shields.io/badge/Vite-Frontend-purple?logo=vite)
+![React](https://img.shields.io/badge/React-18-blue?logo=react)
+![Convex](https://img.shields.io/badge/Convex-Backend-orange)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-Styling-38B2AC?logo=tailwind-css)
+![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?logo=vercel)
+![License](https://img.shields.io/badge/License-MIT-green)
+
+🚀 **Live Demo:** https://splitwisepro.vercel.app
+# 💸 SplitwisePro – Bill Split & Expense Tracker
+
 A modern bill-splitting and expense tracking web application built with **React (Vite)** and powered by **Convex** for backend, database, and authentication.
 
 ---
