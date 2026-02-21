@@ -10,9 +10,7 @@
   🚀 <a href="https://splitwisepro.vercel.app"><strong>Live Demo</strong></a>
 </p>
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&height=5&color=0:4F46E5,50:06B6D4,100:9333EA" />
-</p>
+
 
 # 💸 SplitwisePro – Bill Split & Expense Tracker
 
