@@ -1,26 +1,9 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:4F46E5,100:06B6D4&height=200&section=header&text=SplitwisePro%20💸&fontSize=40&fontColor=ffffff&animation=fadeIn" />
-</p>
-
-
-
-
-# 💸 SplitwisePro – Bill Split & Expense Tracker
-
-<p align="center">
-  <img src="https://img.shields.io/github/stars/adityasing9/SplitwisePro?style=social" />
-  <img src="https://img.shields.io/github/license/adityasing9/SplitwisePro" />
-  <img src="https://img.shields.io/github/package-json/v/adityasing9/SplitwisePro" />
-  <img src="https://img.shields.io/github/deployments/adityasing9/SplitwisePro/vercel?label=Vercel%20Deploy" />
-  <img src="https://komarev.com/ghpvc/?username=adityasing9&repo=SplitwisePro&color=blue" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=250&color=0:4F46E5,50:06B6D4,100:9333EA&text=SplitwisePro%20💸&fontSize=45&fontColor=ffffff&animation=fadeIn&fontAlignY=35" />
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Frontend-React%20%2B%20Vite-blue?logo=react" />
-  <img src="https://img.shields.io/badge/Backend-Convex-orange" />
-  <img src="https://img.shields.io/badge/Database-Convex%20Cloud-yellow" />
-  <img src="https://img.shields.io/badge/Stylings-TailwindCSS-38B2AC?logo=tailwind-css" />
-  <img src="https://img.shields.io/badge/Hosted%20on-Vercel-black?logo=vercel" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=9333EA&center=true&vCenter=true&width=700&lines=Bill+Split+%26+Expense+Tracker;React+%2B+Vite+Frontend;Convex+Cloud+Backend;Live+on+Vercel" />
 </p>
 
 <p align="center">
@@ -29,13 +12,19 @@
 
 ---
 
+# 💸 SplitwisePro – Bill Split & Expense Tracker
+
+A modern bill-splitting and expense tracking web application built with **React (Vite)** and powered by **Convex** for backend, database, and authentication.
+
+---
+
 ## ✨ Features
 
-- 🧾 Split bills among multiple people
-- 📊 Automatic balance calculation
-- ☁️ Cloud backend with Convex
-- 🔐 Built-in authentication (Convex Auth)
-- ⚡ Fast Vite-powered frontend
+- 🧾 Split bills among multiple people  
+- 📊 Automatic calculation of balances  
+- ☁️ Cloud backend powered by Convex  
+- 🔐 Built-in authentication (Convex Auth)  
+- ⚡ Fast and optimized frontend using Vite  
 
 ---
 
@@ -47,19 +36,8 @@
 | Styling | Tailwind CSS |
 | Backend | Convex |
 | Database | Convex Cloud |
+| Authentication | Convex Auth |
 | Deployment | Vercel |
-
----
-
-## 🧠 Architecture
-
-```
-User
-  ↓
-Vercel (React Frontend)
-  ↓
-Convex Cloud (Backend + Database)
-```
 
 ---
 
@@ -67,7 +45,7 @@ Convex Cloud (Backend + Database)
 
 ```
 SplitwisePro/
-├── convex/              # Backend functions & schema
+├── convex/              # Backend functions & database schema
 ├── src/ or app/         # React frontend
 ├── public/
 ├── .env.local
@@ -75,6 +53,17 @@ SplitwisePro/
 ├── vite.config.ts
 └── ...
 ```
+
+---
+
+## 🔐 Authentication
+
+This project uses **Convex Auth** with Anonymous authentication for development.
+
+For production use:
+- Enable email/password login  
+- Add OAuth providers (Google/GitHub)  
+- Secure deployment keys  
 
 ---
 
@@ -86,7 +75,7 @@ SplitwisePro/
 npm install
 ```
 
-### Setup Environment Variables
+### Configure Environment Variables
 
 Create `.env.local`:
 
@@ -96,7 +85,7 @@ CONVEX_DEPLOYMENT=dev:tacit-wildebeest-666
 VITE_CONVEX_URL=https://tacit-wildebeest-666.convex.cloud
 ```
 
-### Start Development Server
+### Start Development
 
 ```bash
 npm run dev
@@ -112,25 +101,18 @@ http://localhost:5173
 
 ## 🚀 Deployment
 
-1. Push to GitHub
-2. Import project in Vercel
-3. Set:
-   - Build Command → `npm run build`
-   - Output Directory → `dist`
-4. Add environment variable:
-   ```
-   VITE_CONVEX_URL=https://tacit-wildebeest-666.convex.cloud
-   ```
-5. Deploy 🎉
+This project is deployed using **Vercel**.
 
----
+Build settings:
 
-## 👤 Author
+- Build Command → `npm run build`
+- Output Directory → `dist`
 
-**Aditya Singh**
+Required environment variable:
 
-- GitHub: https://github.com/adityasing9
-- Portfolio: (Add if available)
+```
+VITE_CONVEX_URL=https://tacit-wildebeest-666.convex.cloud
+```
 
 ---
 
