@@ -1,3 +1,10 @@
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:4F46E5,100:06B6D4&height=200&section=header&text=SplitwisePro%20💸&fontSize=40&fontColor=ffffff&animation=fadeIn" />
+</p>
+
+
+
+
 # 💸 SplitwisePro – Bill Split & Expense Tracker
 
 <p align="center">
